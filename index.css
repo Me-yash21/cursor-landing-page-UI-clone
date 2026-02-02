@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --default-text-color: rgb(241, 241, 241);
+    --background-color: rgb(20, 18, 11);
+    --background-hover-color: #1B1913;
+    --link-text-color: oklab(0.652196 0.168318 0.131453 / 0.75);
+    --btn-text-color:rgb(20, 18, 11);
+    --btn-background-color:rgb(241,241,241);
+    --btn-hover-color:#D7D6D5;
+    --secondary-text-color:oklab(0.943853 0.00107113 0.000336707 / 0.6);
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Carrois Gothic", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--default-text-color);
+
+  background-color:var(--background-color);
+}
+
+header{
+    width: 100vw;
+    padding:0 20px;
+    background-color: var(--background-color);
+    position: fixed;
+}
+
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    height: 52px;
+    margin: 0 auto;
+    
+}
+
+#logo-container{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+#nav-links ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-link-item{
+    color: var(--default-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.nav-link-item:hover{
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.75);
+}
+
+#nav-right-box{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 5.5px 10.5px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+#sign-up-btn{
+    background-color: rgb(0, 0, 0,0);
+    color: var(--default-text-color);
+    border: 0.8px oklab(0.943853 0.00107113 0.000336707 / 0.2) solid;
+}
+#sign-up-btn:hover{
+    background-color: var(--background-hover-color);
+}
+
+#download-btn{
+    background-color: var(--btn-background-color);
+    color: var(--btn-text-color);
+}
+#download-btn:hover{
+    background-color: var(--btn-hover-color);
+}

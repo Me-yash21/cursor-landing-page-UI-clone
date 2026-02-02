@@ -9,6 +9,7 @@
     --btn-background-color:rgb(241,241,241);
     --btn-hover-color:#D7D6D5;
     --secondary-text-color:oklab(0.943853 0.00107113 0.000336707 / 0.6);
+    --black:#191710;
 
 }
 
@@ -55,12 +56,12 @@ header{
     gap: 32px;
 }
 
-.nav-link-item{
+.nav-link-item a{
     color: var(--default-text-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-link-item:hover{
@@ -78,11 +79,11 @@ header{
     align-items: center;
     font-size: 14px;
     line-height: 14px;
-    padding: 5.5px 10.5px;
-    border-radius: 13px;
     cursor: pointer;
 }
 #sign-up-btn{
+    padding: 5.5px 10.5px;
+    border-radius: 13px;
     background-color: rgb(0, 0, 0,0);
     color: var(--default-text-color);
     border: 0.8px oklab(0.943853 0.00107113 0.000336707 / 0.2) solid;
@@ -94,7 +95,67 @@ header{
 #download-btn{
     background-color: var(--btn-background-color);
     color: var(--btn-text-color);
+    padding: 5.5px 10.5px;
+    border-radius: 13.5px;
 }
 #download-btn:hover{
     background-color: var(--btn-hover-color);
+}
+
+#hero-section{
+    height: 200vh;
+}
+
+#hero-section{
+    padding: 112px 20px 65px 20px;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.top-text{
+    width: 36rem;
+    margin-top: 46px;
+    margin-bottom: 60px;
+}
+.hero-text{
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.cta-button{
+    width:236px ;
+    height: 45px ;
+    border-radius: 22px;
+    background-color: var(--btn-background-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 24px;
+}
+.cta-button span{
+    margin-top: 4px;
+}
+.cta-button:hover{
+    background-color: var(--btn-hover-color);
+}
+.cta{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: var(--btn-text-color);
+    text-decoration: none;
+}
+
+.hero-image-box img{
+    width: 1300px;
+    height: 683px;
+    border-radius: 8px;
+    object-fit: cover;
 }

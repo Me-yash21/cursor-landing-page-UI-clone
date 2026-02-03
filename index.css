@@ -439,3 +439,38 @@ header{
     line-height: 14px;
     font-weight: 400;
 }
+
+.join-us-section{
+    margin-top: 85px;
+    padding-top: 40px;
+    margin-bottom: 125px;
+}
+
+.join-text-top{
+    width: 810px;
+    margin-bottom: 56px;
+}
+.join-us-container h3{
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 400;
+    color: var(--default-text-color);
+    text-wrap: balance;
+}
+.join-us-btn{
+    width: 114px;
+    height: 42px;
+    margin-top: 22px;
+}
+
+.join-us-image-container{
+    max-width: 1300px;
+    height: 731px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.join-us-image-container img{
+    width: 100%;
+    height: auto;
+}

@@ -296,7 +296,7 @@ header{
     justify-content: space-between;
     height: 278px;
     background-color: var(--card-background-color);
-    padding: 20px 18px;
+    padding: 18px 18px;
     border-radius: 4px;
 
 }
@@ -318,3 +318,63 @@ header{
     color: var(--secondary-text-color);
 }
 
+.frontier-cards-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.frontier-section{   
+    margin-top: 90px;
+    padding-top: 90px;
+}
+
+.frontier-container h3{
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 400;
+    padding-bottom: 24px;
+}
+
+.frontier-card{
+    display: flex;
+    flex-direction: column;
+    /* height: 384px; */
+    background-color: var(--card-background-color);
+    gap:18px;
+    padding: 18px 18px;
+    border-radius: 4px;
+}
+
+.frontier-card-image-box{
+    width:392px;
+    height: 394px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.frontier-card-image-box img{
+    width: 100%;
+    height: auto;
+}
+
+.frontier-card-top{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: start;
+}
+
+.frontier-heading, .frontier-desc{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.frontier-heading{
+    color: var(--default-text-color);
+}
+
+.frontier-desc{ 
+    color: var(--secondary-text-color);
+}

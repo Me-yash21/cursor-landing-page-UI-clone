@@ -248,3 +248,73 @@ header{
 .feat-image-container img{
     border-radius: 5px;
 }
+
+
+.testimonial-container h3{
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    color: var(--default-text-color);
+    font-weight: 400;
+    margin-bottom: 45px;
+}
+
+.testimonial-section{
+    margin-top: 85px;
+    padding-top: 45px;
+}
+
+.testimonial-cards-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+}
+
+.feedback-text, pre{
+    font-size: 16px;
+    font-family: "Inter", "Carrois Gothic", sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--default-text-color);
+}
+
+.user-avatar-container{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.user-avatar-container img{
+    width: 100%;
+    height: auto;
+}
+
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 278px;
+    background-color: var(--card-background-color);
+    padding: 20px 18px;
+    border-radius: 4px;
+
+}
+.user-detail{
+    display:flex;
+    gap: 12px;
+    justify-content: start;
+    
+}
+
+.user-name, .user-designation{
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: rgb(237, 236, 236);
+}
+
+.user-designation{
+    color: var(--secondary-text-color);
+}
+

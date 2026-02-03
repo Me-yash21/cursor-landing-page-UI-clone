@@ -381,7 +381,7 @@ header{
 
 .changelog-section{   
     margin-top: 90px;
-    padding-top: 90px;
+    padding-top: 80px;
 }
 
 .changelog-container h3{
@@ -473,4 +473,59 @@ header{
 .join-us-image-container img{
     width: 100%;
     height: auto;
+}
+
+.highlights-section{
+    background-color: var(--card-background-color);
+    padding:89px 0px;
+}
+.highlights-grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+
+.highlights-title{
+    grid-column: 1/ span 3;
+}
+
+.highlights-title h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--default-text-color);
+    position:sticky;
+    top: 64px;
+}
+.highlights-card-container{
+    grid-column: 4/span 6;
+}
+
+.highlights-card{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: start;
+    padding: 15px;
+    border-radius: 5px;
+    background-color:rgb(32, 30, 24);
+    margin-bottom: 10px;
+    border: 0.5px solid rgb(38, 36, 30);
+}
+
+.highlights-card-top h4, .highlights-card p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.highlights-card-top h4{
+    color: var(--default-text-color);
+}
+.highlights-card p{
+    color: var(--secondary-text-color);
+    text-wrap-style: pretty;
+}
+
+.highlight-post-link{
+    margin-top: 20px;
 }

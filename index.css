@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 :root{
-    --default-text-color: rgb(241, 241, 241);
+    --default-text-color: rgb(237, 236, 236);
     --background-color: rgb(20, 18, 11);
     --background-hover-color: #1B1913;
     --link-text-color:oklab(65.216% 0.16831 0.1314) ;
@@ -377,4 +377,65 @@ header{
 
 .frontier-desc{ 
     color: var(--secondary-text-color);
+}
+
+.changelog-section{   
+    margin-top: 90px;
+    padding-top: 90px;
+}
+
+.changelog-container h3{
+    margin-bottom: 22px;
+    font-size: 26px;
+    line-height: 33px;
+    font-weight: 400;
+}
+
+.changelog-cards-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.changelog-card{
+    display: flex;
+    flex-direction: column;
+    padding: 18px;
+    border-radius: 4px;
+    align-items: start;
+    gap: 10px;
+    background-color: var(--card-background-color);
+}
+
+.changelog-date{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.changelog-date time, .changelog-text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.changelog-date time{
+    color: var(--secondary-text-color);
+}
+/* .changelog-text{
+    color: var(--default-text-color);
+} */
+
+.changelog-label{
+    padding: 4px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.8px solid var(--secondary-text-color);
+    border-radius: 2rem;
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
 }
